@@ -10,12 +10,18 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Truco Counter")
+                .font(.largeTitle)
+            
+            Button("Resetar") {
+                
+            }
+            .buttonStyle(.bordered)
         }
-        .padding()
+        HStack {
+            TeamView(teamTitle: "Nós")
+            TeamView(teamTitle: "Eles")
+        }
     }
 }
 
